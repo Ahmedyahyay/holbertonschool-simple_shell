@@ -1,8 +1,3 @@
-man_1_simple_shell`**
-
-* **Important:** This file uses `groff` syntax, which is standard for man pages. Ensure it's saved with the exact filename `man_1_simple_shell`.
-
-```roff
 .\" Man page for simple_shell
 .\" Contact the authors if you find bugs.
 .TH SIMPLE_SHELL 1 "April 2025" "Simple Shell" "User Commands"
@@ -11,9 +6,9 @@ simple_shell \- Simple UNIX command interpreter
 .SH SYNOPSIS
 \fBsimple_shell\fR
 .SH DESCRIPTION
-\fBsimple_shell\fR is a basic command line interpreter modeled after the standard sh shell. It displays a prompt and executes commands entered by the user. The shell supports both interactive and non-interactive modes.
+\fBsimple_shell\fR is a basic command line interpreter modeled after the standard `sh` shell. It displays a prompt and executes commands entered by the user. The shell supports both interactive and non-interactive modes.
 .PP
-In interactive mode, it displays the prompt `($) ` and waits for user input. After executing a command, the prompt is displayed again.
+In interactive mode, it displays the prompt `($)` and waits for user input. After executing a command, the prompt is displayed again.
 .PP
 Commands are executed by searching for the executable in the directories listed in the \fBPATH\fR environment variable. If the command includes a path (e.g., `/bin/ls`), the \fBPATH\fR is not searched.
 .PP
@@ -25,7 +20,7 @@ The following built-in commands are implemented:
 .SH BUILTINS
 .TP
 \fBexit\fR [\fIstatus\fR]
-Terminate the \fBsimple_shell\fR process. If an argument \fIstatus\fR (an integer) is provided, the shell exits with that status. Otherwise, it exits with the status of the last command executed. (Note: argument handling for exit might be implemented in later versions).
+Terminate the \fBsimple_shell\fR process. If an argument \fIstatus\fR (an integer) is provided, the shell exits with that status. Otherwise, it exits with the status of the last command executed. (Note: Argument handling for `exit` may be implemented in later versions.)
 .TP
 \fBenv\fR
 Print the current environment variables, one per line, in the format `variable=value`.
@@ -36,7 +31,9 @@ A colon-separated list of directories in which the shell looks for executable co
 .SH EXIT STATUS
 The shell exits with status 0 on successful execution of the `exit` command without an argument, or upon receiving EOF (Ctrl+D). If the `exit` command is given an integer argument \fIstatus\fR, the shell exits with that status. If a command cannot be found or fails to execute, a non-zero status is implicitly returned (typically related to the error). Error messages are printed to standard error.
 .SH BUGS
-No known bugs. Limitations include lack of support for pipelines, redirections, logical operators (&&, ||), command separators (;), quoting, and other advanced shell features.
+No known bugs. Limitations include the lack of support for pipelines, redirections, logical operators (&&, ||), command separators (;), quoting, and other advanced shell features.
 .SH AUTHORS
 See the AUTHORS file for a list of contributors. This project was completed as part of the Holberton School curriculum.
 .SH SEE ALSO
+sh(1), bash(1), csh(1)
+
