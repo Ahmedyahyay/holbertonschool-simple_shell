@@ -1,6 +1,6 @@
 .\" Man page for simple_shell
 .\" Contact the authors if you find bugs.
-.TH SIMPLE_SHELL 1 "April 2025" "Simple Shell" "User Commands"
+.TH SIMPLE_SHELL 13 "April 2025" "Simple Shell" "User Commands"
 .SH NAME
 simple_shell \- Simple UNIX command interpreter
 .SH SYNOPSIS
