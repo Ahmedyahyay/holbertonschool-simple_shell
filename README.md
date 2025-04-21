@@ -69,5 +69,5 @@ Bash
 man simple_shell
 (if installed correctly)
 
-Authors
+AUTHORS
 See the AUTHORS file for the list of contributors.
